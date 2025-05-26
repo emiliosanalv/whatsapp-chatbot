@@ -12,7 +12,7 @@ export async function verifySignature(req, env) {
     const theirHex = sigHeader.slice(7);           // Remove the "sha256=" part.
     const bodyBuf  = await req.clone().arrayBuffer();
   
-    // Step 1: Make an HMAC with APP_SECRET.
+    // Step 1: Make an HMAC with APP_SECRET
     const key = await crypto.subtle.importKey(
       "raw",
       new TextEncoder().encode(env.APP_SECRET),
