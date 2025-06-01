@@ -1,5 +1,5 @@
 
-# Whatsapp Chatbot (LLM)
+# Whatsapp + LLM
 
 ## Setup
 - Make a new Cloudflare Worker
